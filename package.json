@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "server:dubug": "nodemon --inspect ./server/index.js",
+    "server:dev": "nodemon ./server/index.js -p"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/Codetrotters124/ProxyServer-DM/issues"
   },
-  "homepage": "https://github.com/Codetrotters124/ProxyServer-DM#readme"
+  "homepage": "https://github.com/Codetrotters124/ProxyServer-DM#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  }
 }
