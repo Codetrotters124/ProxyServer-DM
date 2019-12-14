@@ -8,5 +8,4 @@ const cors = require('cors');
 app.use(cors());
 app.use('/', express.static(path.join(__dirname, '../public')));
 
-app.get('', )
-app.listen(port, () => console.log(path.join(__dirname, '../public')));
+app.listen(port, () => console.log(`App listening on port ${port}!`));
